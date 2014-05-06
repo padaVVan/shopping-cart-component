@@ -222,6 +222,13 @@ class EShoppingCart extends CMap {
     {
         return !(bool)$this->getCount();
     }
-
-
+    /**
+     * Return if isset position
+     * @param  string $key
+     * @return bool
+     */
+    public function issetPostion($key)
+    {
+        return $this->contains($key);
+    }
 }
